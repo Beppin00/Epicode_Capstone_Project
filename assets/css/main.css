@@ -1,0 +1,842 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none !important;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+/*------------------------ 
+ GLobal Css
+------------------------*/
+:root {
+    --primary-color: #4285F4;
+    --yellow-color: #FBBC05;
+    --white-color: #FFFFFF;
+    --black-1-color: #181818;
+    --black-2-color: #747474;
+    --gray-1-color: #DFDFDF;
+    --gray-2-color: #9E9E9E;
+    --gray-3-color: #F8F9FA;
+}
+
+a.btn.btn-primary {
+    background-color: var(--primary-color) !important;
+    border-radius: 50px;
+    border: none;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 600;
+}
+
+button.btn.btn-primary {
+    background-color: var(--primary-color) !important;
+    border-radius: 50px;
+    border: none;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 600;
+}
+
+
+a.btn.btn-outline-primary {
+    border: 1px solid var(--primary-color) !important;
+    border-radius: 50px;
+    color: var(--primary-color) !important;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 600;
+}
+
+a.btn.btn-outline-primary:hover {
+    background-color: var(--primary-color) !important;
+    color: var(--white-color) !important;
+}
+
+ul {
+    list-style: none;
+}
+
+/*------------------------ 
+ Navbar
+------------------------*/
+.navbar {
+    padding: 15px 0;
+    transition: all 0.5s ease;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.navbar>.container {
+    padding: 0 15px;
+}
+
+.navbar .nav-item {
+    margin-left: 40px;
+}
+
+.navbar .nav-item .nav-link {
+    color: var(--black-1-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    font-style: normal;
+    position: relative;
+}
+
+.navbar .nav-item .nav-link.active {
+    color: var(--primary-color);
+}
+
+.navbar .nav-item .nav-link:hover {
+    color: var(--primary-color);
+}
+
+.navbar .nav-item .nav-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 64px;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: all 0.5s ease;
+    transform: scale(0);
+}
+
+.navbar .nav-item .nav-link.active::before,
+.navbar .nav-item .nav-link:hover::before {
+    transform: scale(0.8);
+}
+
+.navbar a.btn.btn-primary {
+    padding: 0.7rem 1.5rem;
+}
+
+/*------------------------ 
+ Home Section
+------------------------*/
+.home {
+    min-height: 100vh;
+    padding: 190px 0;
+    position: relative;
+}
+
+.home-text h1 {
+    font-size: 72px;
+    font-weight: bold;
+    max-width: 483px;
+    color: var(--black-1-color);
+    line-height: 108px;
+    /* margin-top: 8rem; */
+    margin-bottom: 1rem;
+}
+
+.home-text p {
+    font-size: 24px;
+    color: var(--black-2-color);
+    font-weight: normal;
+    line-height: 36px;
+}
+
+.home-img img {
+    width: 568px;
+}
+
+/*------------------------ 
+ Services Section
+------------------------*/
+.header-page h2 {
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: normal;
+    color: var(--black-1-color);
+}
+
+.header-page p {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: normal;
+    color: var(--black-2-color);
+    margin-bottom: 7rem;
+}
+
+section.services .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 9.81468px 18.7371px 84.7631px rgba(0, 0, 0, 0.12);
+    margin-bottom: 5rem;
+    padding: 35px 20px 0px 30px;
+    display: flex;
+}
+
+section.services .card h4 {
+    font-size: 20px;
+    color: var(--black-1-color);
+    line-height: 31px;
+    max-width: 134px;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+}
+
+section.services .card img {
+    width: 57px;
+    margin-bottom: 2rem;
+}
+
+section.services {
+    background-image: url('../img/background/rounded-bg.svg');
+    background-repeat: no-repeat;
+    background-position-x: 86vw;
+    background-position-y: 50vh;
+    padding-bottom: 20rem;
+
+}
+
+/*------------------------ 
+ What we do Section
+------------------------*/
+
+section.what-we-do {
+    margin-bottom: 10rem;
+}
+
+section.what-we-do img {
+    width: 624px;
+    object-fit: cover;
+}
+
+section.what-we-do h2 {
+    font-size: 36px;
+    line-height: 54px;
+    font-weight: normal;
+    color: var(--black-1-color);
+    margin-bottom: 10rem;
+}
+
+section.what-we-do .header-project h3 {
+    font-size: 36px;
+    margin-top: 7rem;
+    font-weight: bold;
+    color: var(--black-1-color);
+    line-height: 54px;
+}
+
+section.what-we-do .header-project p {
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    color: var(--black-2-color);
+    padding-bottom: 2rem;
+}
+
+section.what-we-do .btn.btn-outline-primary {
+    padding: 0.7rem 1.5rem;
+}
+
+section.what-we-do .project-item {
+    padding-bottom: 10rem;
+}
+
+/*------------------------ 
+Section card desc
+-----------------------*/
+
+section.card-desc {
+    padding-bottom: 8rem;
+    padding-top: 8rem;
+}
+
+section.card-desc.bg {
+    background-image: url('/assets/img/background/bg-blue.svg');
+    background-repeat: no-repeat;
+    background-position-x: 7.3rem;
+    background-position-y: 3rem;
+    background-size: 30vw;
+}
+
+section.card-desc .card {
+    border: none;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.12);
+    border-radius: 17px;
+    padding: 1.5rem 2.3rem 1.5rem 2.3rem;
+}
+
+section.card-desc .logo {
+    box-shadow: 0px 3.25581px 17.093px rgba(0, 0, 0, 0.1);
+    border-radius: 17px !important;
+}
+
+section.card-desc h4 {
+    font-size: 23px;
+    color: var(--black-1-color);
+    line-height: 34px;
+    padding-bottom: 0.1rem;
+    font-weight: normal;
+}
+
+section.card-desc .line {
+    background-color: var(--gray-2-color);
+    width: 50px;
+    height: 4px;
+}
+
+section.card-desc p {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--black-2-color);
+    line-height: 27px;
+}
+
+/*------------------------ 
+Section card talk
+-----------------------*/
+
+section.card-talk {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+section.card-talk .card {
+    border: none;
+    border-radius: 44px;
+    background-color: #042449;
+    color: var(--white-color);
+    padding: 2.5rem;
+    background-image: url('/assets/img/background/bg-card.svg');
+    background-repeat: no-repeat;
+    position: relative;
+    background-position-x: 43rem;
+}
+
+section.card-talk .card h5 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 75px;
+}
+
+section.card-talk .card p {
+    font-size: 24px;
+    color: var(--gray-1-color);
+    font-weight: normal;
+    line-height: 36px;
+}
+
+section.card-talk .card a {
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+    color: var(--primary-color);
+    margin-top: 1rem;
+}
+
+/*------------------------ 
+Section portfolio
+-----------------------*/
+section.portfolio {
+    padding-top: 10rem;
+}
+
+section.portfolio .item-portfolio {
+    display: none;
+}
+
+
+section.portfolio img {
+    width: 364px;
+    height: 261px;
+    object-fit: cover;
+    border-radius: 15px !important;
+}
+
+section.portfolio h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--black-1-color);
+    line-height: 36px;
+}
+
+section.portfolio p {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 27px;
+    color: var(--black-1-color);
+}
+
+section.portfolio a {
+    color: var(--black-2-color);
+    text-decoration: none;
+}
+
+section.portfolio button {
+    padding: 0.7rem 1.5rem;
+}
+
+section.portfolio .noContent {
+    color: var(--black-2-color);
+    background-color: transparent !important;
+    pointer-events: none;
+}
+
+/*------------------------ 
+Section why us
+-----------------------*/
+section.whyus {
+    padding-top: 10rem;
+    margin-bottom: 3rem;
+}
+
+section.whyus img {
+    width: 171px;
+}
+
+section.whyus h3 {
+    font-size: 20px;
+    color: var(--black-1-color);
+    line-height: 30px;
+    font-weight: 500;
+    padding: 21px 0;
+}
+
+section.whyus p {
+    font-size: 14px;
+    color: var(--black-1-color);
+    line-height: 21px;
+    font-weight: 400;
+}
+
+
+section.whyus .header-page-why h2 {
+    font-size: 48px;
+    font-weight: normal;
+    line-height: 72px;
+    color: var(--black-1-color);
+}
+
+section.whyus .header-page-why p {
+    font-size: 20px;
+    color: var(--black-1-color);
+    line-height: 30px;
+    font-weight: 300;
+
+}
+
+/*------------------------ 
+Section about us
+-----------------------*/
+section.about {
+    padding-top: 10rem;
+    margin-bottom: 3rem;
+}
+
+
+section.about .header-page-about h2 {
+    font-size: 48px;
+    font-weight: normal;
+    line-height: 72px;
+    color: var(--black-1-color);
+}
+
+section.about .header-page-about p {
+    font-size: 20px;
+    color: var(--black-1-color);
+    line-height: 30px;
+    font-weight: 300;
+
+}
+
+/*------------------------ 
+ Contact Section
+------------------------*/
+
+section.contact {
+    padding-top: 10rem;
+}
+
+section.contact img {
+    padding-top: 15rem;
+}
+
+.form-group {
+    padding-bottom: 1.5rem;
+}
+
+.form-group .form-control {
+    border-radius: 11px;
+    border: 1px solid var(--gray-1-color);
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 25px;
+    padding: 20px;
+    padding-left: 35px;
+}
+
+.form-group .form-control:focus {
+    box-shadow: none;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+section.contact button.btn.btn-primary {
+    padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+}
+
+
+/*------------------------ 
+ Thanks Section
+------------------------*/
+section.thanks {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+section.thanks h5 {
+    padding-top: 2rem;
+    font-size: 26px;
+    line-height: 44px;
+    font-weight: normal;
+    color: var(--black-1-color);
+}
+
+section.thanks a {
+    padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+}
+
+
+/* #loadMore {
+    width: 200px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: blue;
+    transition: .3s;
+}
+
+#loadMore:hover {
+    color: blue;
+    background-color: #fff;
+    border: 1px solid blue;
+    text-decoration: none;
+} */
+
+
+
+/*------------------------ 
+Section footer
+-----------------------*/
+
+footer {
+    background-color: var(--gray-3-color);
+    padding: 4em 0 4rem 0;
+}
+
+footer img {
+    margin-bottom: 3rem;
+}
+
+footer span {
+    font-size: 36px;
+    color: var(--black-1-color);
+    font-weight: 500;
+    margin-top: 4rem;
+}
+
+footer span p {
+    color: var(--black-1-color);
+    line-height: 27px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+footer a {
+    color: var(--black-1-color);
+}
+
+/* --------------------------------------------------
+ Custom Scrollbar
+  ----------------------------------------------------*/
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: rgb(207, 206, 206);
+}
+
+
+/*------------------------ 
+Scroll out animate
+-----------------------*/
+[data-scroll] {
+    transition: all 2s;
+}
+
+[data-scroll="in"] {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+[data-scroll="out"] {
+    opacity: 0;
+    transform: translateX(-200px);
+}
+
+
+/*------------------------ 
+ Responsive
+------------------------*/
+@media(max-width: 767px) {
+
+    /*------------------------ 
+    Home Section
+    ------------------------*/
+    .home {
+        padding: 90px 0;
+    }
+
+    .home-text h1 {
+        font-size: 52px;
+        max-width: 483px;
+        line-height: 68px;
+        margin-top: 8rem;
+        margin-bottom: 1rem;
+    }
+
+    .home-text p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    /*------------------------ 
+    Navbar
+    -----------------------*/
+    .navbar {
+        padding: 15px 0;
+    }
+
+    .navbar>.container {
+        padding: 0 15px;
+    }
+
+    .navbar .nav-item {
+        margin-left: 5px;
+    }
+
+    .navbar .nav-item .nav-link::before {
+        height: 0;
+    }
+
+    .navbar a.btn.btn-primary {
+        display: block;
+    }
+
+    /*------------------------ 
+    Services Section
+    ------------------------*/
+    .header-page h2 {
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+    .header-page p {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 5rem;
+    }
+
+    section.services .card {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 9.81468px 18.7371px 84.7631px rgba(0, 0, 0, 0.12);
+        margin-bottom: 2rem;
+        padding: 35px 20px 0px 30px;
+        display: flex;
+    }
+
+    section.services .card h4 {
+        font-size: 25px;
+        color: var(--black-1-color);
+        line-height: 31px;
+        max-width: 100px !important;
+        margin-bottom: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    section.services {
+        background-image: none;
+    }
+
+    /*------------------------ 
+    What we do Section
+    ------------------------*/
+    section.what-we-do .project-item {
+        padding-bottom: 1rem;
+    }
+
+    /*------------------------ 
+    Section card desc
+    -----------------------*/
+
+    section.card-desc {
+        padding-top: 0;
+    }
+
+    section.card-desc.bg {
+        background-image: none;
+    }
+
+    section.card-desc .card {
+        border: none;
+    }
+
+    section.card-desc .logo {
+        box-shadow: none;
+        border-radius: 17px !important;
+    }
+
+    /*------------------------ 
+    Section card talk
+    -----------------------*/
+
+    section.card-talk {
+        padding-top: 1rem;
+        padding-bottom: 10rem;
+    }
+
+    section.card-talk .card {
+        background-color: #042449;
+        color: var(--white-color);
+        padding: 2.5rem;
+        background-position-x: 1rem;
+    }
+
+    section.card-talk .card h5 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    section.card-talk .card p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+}
+
+@media(max-width: 991px) {
+
+    /*------------------------ 
+    Home Section
+    ------------------------*/
+    .home-text h1 {
+        margin-top: 3rem;
+    }
+
+    .home-text p {
+        font-size: 20px;
+    }
+
+    /*------------------------ 
+        Navbar
+        ------------------------*/
+    .navbar {
+        padding: 15px 0;
+    }
+
+    .navbar>.container {
+        padding: 0 15px;
+    }
+
+    .navbar .nav-item {
+        margin-left: 5px;
+    }
+
+    .navbar .nav-item .nav-link::before {
+        height: 0;
+    }
+
+    .navbar a.btn.btn-primary {
+        display: block;
+    }
+
+    /*------------------------ 
+    Services Section
+    ------------------------*/
+    .header-page h2 {
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+    .header-page p {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 5rem;
+    }
+
+    section.services .card h4 {
+        font-size: 16px;
+        color: var(--black-1-color);
+        line-height: 21px;
+        max-width: 93px;
+        margin-bottom: 2rem;
+    }
+
+    section.services {
+        background-position-y: 30vh;
+    }
+
+    /*------------------------ 
+    What we do Section
+    ------------------------*/
+    section.what-we-do .project-item {
+        padding-bottom: 7rem !important;
+    }
+
+    section.what-we-do .header-project h3 {
+        font-size: 36px;
+        margin-top: 2rem;
+        font-weight: bold;
+        color: var(--black-1-color);
+        line-height: 54px;
+    }
+
+    /*------------------------ 
+    Section card talk
+    -----------------------*/
+
+    section.card-talk {
+        padding-top: 0rem;
+    }
+
+    section.card-talk .card {
+        background-position-x: 5rem;
+    }
+
+}
