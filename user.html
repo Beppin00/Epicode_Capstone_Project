@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>User | L'Angolo dei Lettori</title>
+    <meta name="locale" property="og:locale" content="en_US">
+    <meta name="title" property="og:title" content="Plibary | Your Personal Book-tracker">
+    <meta name="description" property="og:description" content="Plibrary, your private library the lightweight book-tracker web application">
+    <meta property="og:site_name" content="Plibrary | Personal Book-tracker">
+    <meta name="author" property="og:author" content="0xabdulkhalid">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="assets/img/logo/logo-bar.svg">
+    <link rel="stylesheet" href="assets/css/user.css">
+</head>
+<body>
+
+    <header class="reveal-down">
+        <h1>Benvenuto Lettore</h1>
+    </header>
+
+    <nav role="navigation">
+        <div id="menuToggle">
+            <input type="checkbox" id="togglerCheckbox"/>
+            <div class="toggle">
+                <img src="assets/img/user/add.png" alt="add-book">
+            </div>
+    
+            <section class="pop-up" id="menu">
+                <form id="book-form">
+                    <div class="form-container">
+                        <h1 class="form-header">
+                            Nuovo Libro
+                        </h1>
+                        <div class="input-container">
+                            <label for="title"></label>
+                            <input type="text" name="title" id="title" required>
+                            <span>
+                                Titolo
+                            </span>
+                        </div>
+                        <div class="input-container">
+                            <label for="author"></label>
+                            <input type="text" name="author" id="author" required>
+                            <span>
+                                Autore
+                            </span>
+                        </div>
+                        <div class="input-container">
+                            <label for="pages">
+                            </label>
+                            <input type="number" name="pages" id="pages" min="1" required>
+                            <span>
+                                Pagine
+                            </span>
+                        </div>
+                        <div class="input-container checkbox">
+                            <span class="checkbox">
+                                Letto
+                            </span>
+                            <label class="checkbox-container">
+                                <input type="checkbox" class="read-status-determiner">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div id="btm">
+                            <button type="submit" class="submit-btn">Aggiungi alla libreria</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </nav>    
+
+    <main>
+        <div class="usage-tip book-card">
+            <h2>La tua libreiria è vuota !</h2>
+            <p>Clicca il "<strong>+</strong>" e aggiungi un nuovo libro</p>
+            <p>-- (OR) --</p>
+            <button class="try-books">Prova alcuni libri</button>
+        </div>
+    </main>
+
+
+    <script src="assets/js/script.js" defer></script>
+    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+</body>
+</html>
